@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id('io.qameta.allure') version '2.11.2'
+}
+
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.10.1',
+            'com.codeborne:selenide:6.19.1',
+            'org.slf4j:slf4j-simple:2.0.9',
+            'io.qameta.allure:allure-selenide:2.25.0'
+}
+
+test {
+    useJUnitPlatform()
+}
